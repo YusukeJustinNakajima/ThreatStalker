@@ -5,7 +5,7 @@ allowing you to tailor your forensic and threat hunting analysis to your specifi
 ![image-1](https://github.com/user-attachments/assets/df8f100c-8dbc-4992-9813-c1205dab4f89)
 
 
-## Purpose
+## Background and Purpose
 - Vendor-independent Sigma rules play a crucial role in threat hunting and SOC operations, as they are widely used by many organizations. However, as mentioned in 
 [MITRE's Summiting the Pyramid](https://ctid.mitre.org/projects/summiting-the-pyramid/), **many detection rules can be easily evaded by attackers.**
 - Moreover, increasing detection coverage often leads to a surge in false positives, overwhelming analysts with excessive alerts. Addressing this trade-off is therefore of utmost importance.
