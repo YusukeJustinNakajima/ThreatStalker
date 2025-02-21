@@ -14,7 +14,7 @@ def display_help():
     table.add_column("Description", style="bold green")
 
     table.add_row("--attackID, -id", "MITRE ATT&CK technique ID(s) (e.g., t1190, t1505)")
-    table.add_row("--threat_actor_name, -a", "Threat Actor Name (e.g., APT29) - extracts associated techniques from the MITRE STIX data")
+    table.add_row("--threat_actor_name, -a", "Threat Actor Name (e.g., APT29) - extracts associated techniques from the MITRE STIX data. Please see MITRE ATT&CK Groups(https://attack.mitre.org/groups/)")
     table.add_row("--tactics, -t", "Filter sigma rules by tactic tag (e.g., initial-access)")
     table.add_row("--lolbin -l", "Enable advanced LOLBin detection filtering")
     table.add_row("--product, -p", "[bold red]Required[/bold red] - Target product/platform (e.g., windows)")
@@ -35,7 +35,7 @@ def parse_args():
 
     group_att = parser.add_mutually_exclusive_group()
     group_att.add_argument('--attackID', '-id', nargs='+', help="MITRE ATT&CK technique ID(s) (e.g., t1190, t1505)")
-    group_att.add_argument('--threat_actor_name', '-a', help="Threat Actor Name (e.g., APT29) - extracts associated techniques from the MITRE STIX data")
+    group_att.add_argument('--threat_actor_name', '-a', help="Threat Actor Name (e.g., APT29) - extracts associated techniques from the MITRE STIX data. Please see MITRE ATT&CK Groups(https://attack.mitre.org/groups/)")
     parser.add_argument('--tactics', '-t', help="Filter sigma rules by tactic tag (e.g., initial-access)")
     parser.add_argument('--lolbin', '-l', action='store_true', help="Enable advanced LOLBin detection filtering")
     parser.add_argument('--product', '-p', required=True, help="Target product/platform (e.g., windows)")
