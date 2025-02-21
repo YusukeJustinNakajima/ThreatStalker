@@ -28,28 +28,28 @@ pip install -r requirements.txt
 Download Hayabusa Binary from https://github.com/Yamato-Security/hayabusa
 
 
-### How to use
-Filtering by Attack ID:
+## How to use
+### Filtering by Attack ID:
 ```bash
 python3 ThreatStalker.py --attackID t1190 --product windows
 ```
 
-Filtering by Tactics:
+### Filtering by Tactics:
 ```bash
 python3 ThreatStalker.py --tactics execution --product windows
 ```
 
-Filtering by Actors:
+### Filtering by Actors:
 ```bash
 python3 ThreatStalker.py --threat_actor_name APT37 --product windows
 ```
 
-Filtering by LoLbin:
+### Filtering by LoLbin:
 ```bash
 python3 ThreatStalker.py --lolbin --product windows
 ```
 
-Filtering by Actors and Apply these rules using Hayabusa
+### Filtering by Actors and Apply these rules using Hayabusa
 ```bash
 python3 ThreatStalker.py --threat_actor_name APT37 --product windows --use-hayabusa -d hayabusa-sample-evtx/EVTX-ATTACK-SAMPLES/
 ```
