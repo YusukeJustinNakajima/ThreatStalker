@@ -1,0 +1,6 @@
+mitreattack_python==3.0.8
+pandas==2.2.3
+PyYAML==5.4.1
+PyYAML==6.0.2
+rich==13.9.4
+ruamel.base==1.0.0
